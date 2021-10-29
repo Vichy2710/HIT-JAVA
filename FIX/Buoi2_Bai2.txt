@@ -1,0 +1,53 @@
+case 3:
+                    ++n;
+                    x=c3_themPhanTu(x,n,3,9);
+                    c2_hienThiMang(x,n);
+                    sleep(2000);
+                    break;
+case 4:
+                    --n;
+                    x=c4_xoaPhanTu(x,n,2);
+                    c2_hienThiMang(x,n);
+                    sleep(2000);
+                    break;
+                    
+                    
+public static int[] c3_themPhanTu(int[] a, int n, int viTri, int phanTuThem){
+        if(viTri>n){
+            System.out.println("Vi tri khong hop le!");
+            return a;
+        }
+        else{
+            int[] x= new int[n];
+            for (int i=0;i<n;i++){
+                if(i<viTri-1){
+                    x[i]=a[i];
+                }
+                else if(i==viTri-1){
+                    x[i]=phanTuThem;
+                }
+                else{
+                    x[i]=a[i-1];
+                }
+            }
+            return x;
+        }
+    }
+public static int[] c4_xoaPhanTu(int[] a, int n, int viTri){
+        if(viTri>n){
+            System.out.println("Vi tri khong hop le!");
+            return a;
+        }
+        else{
+            int[] x= new int[n];
+            for (int i=0;i<n;i++){
+                if(i<viTri-1){
+                    x[i]=a[i];
+                }
+                else{
+                    x[i]=a[i+1];
+                }
+            }
+            return x;
+        }
+    }
