@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class HinhChuNhat{
     public static void main(String[] args) {
+
         int n=4,m=12;
         for(int i=0;i<m;i++){
             System.out.print("* ");
@@ -15,5 +18,6 @@ public class HinhChuNhat{
         for(int i=0;i<m;i++){
             System.out.print("* ");
         }
+
     }
 }
