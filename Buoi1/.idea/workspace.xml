@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="636df0ed-acad-4d85-8c3e-6d3fde982a02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai1/src/HinhChuNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bai1/src/HinhChuNhat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,17 +54,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Bai2" />
@@ -86,6 +74,7 @@
       <workItem from="1634028609940" duration="17000" />
       <workItem from="1634028756487" duration="171000" />
       <workItem from="1637673091322" duration="434000" />
+      <workItem from="1638933892401" duration="95000" />
     </task>
     <servers />
   </component>
