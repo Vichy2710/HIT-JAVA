@@ -97,25 +97,9 @@ public class Binary_Calculator implements ActionListener {
         }
         if(e.getSource()==equBut){
             Integer num1=0, num2=0;
-            if( myComboBox1.getSelectedItem()=="Binary"){
-                num1=Integer.parseInt(myTextField1.getText(),2);
-            }else if( myComboBox1.getSelectedItem()=="Octal"){
-                num1=Integer.parseInt(myTextField1.getText(),8);
-            }else if( myComboBox1.getSelectedItem()=="Hexadecimal"){
-                num1=Integer.parseInt(myTextField1.getText(),16);
-            }else if( myComboBox1.getSelectedItem()=="Decimal"){
-                num1=Integer.parseInt(myTextField1.getText());
-            }
+            num1 = getInteger(num1, myComboBox1, myTextField1);
 
-            if( myComboBox2.getSelectedItem()=="Binary"){
-                num2=Integer.parseInt(myTextField2.getText(),2);
-            }else if( myComboBox1.getSelectedItem()=="Octal"){
-                num2=Integer.parseInt(myTextField2.getText(),8);
-            }else if( myComboBox1.getSelectedItem()=="Hexadecimal"){
-                num2=Integer.parseInt(myTextField2.getText(),16);
-            }else if( myComboBox1.getSelectedItem()=="Decimal"){
-                num2=Integer.parseInt(myTextField2.getText());
-            }
+            num2 = getInteger(num2, myComboBox2, myTextField2);
 
             Integer ansNum=0;
             if( myOperations.getSelectedItem()=="Add (+)"){
@@ -142,5 +126,18 @@ public class Binary_Calculator implements ActionListener {
                 ans.setText(Integer.toString(ansNum));
             }
         }
+    }
+
+    private Integer getInteger(Integer num2, JComboBox myComboBox2, TextField myTextField2) {
+        if( myComboBox2.getSelectedItem()=="Binary"){
+            num2=Integer.parseInt(myTextField2.getText(),2);
+        }else if( myComboBox1.getSelectedItem()=="Octal"){
+            num2=Integer.parseInt(myTextField2.getText(),8);
+        }else if( myComboBox1.getSelectedItem()=="Hexadecimal"){
+            num2=Integer.parseInt(myTextField2.getText(),16);
+        }else if( myComboBox1.getSelectedItem()=="Decimal"){
+            num2=Integer.parseInt(myTextField2.getText());
+        }
+        return num2;
     }
 }

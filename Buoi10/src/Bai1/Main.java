@@ -24,7 +24,6 @@ public class Main {
             System.out.println("Loi nhap du lieu, moi thu lai !");
             return;
         }
-
         Collections.sort(people);
         System.out.println(people);
         Collections.sort(people, new Comparator<Person>() {
@@ -36,7 +35,6 @@ public class Main {
 
             }
         });
-
         System.out.println(people);
     }
 }
