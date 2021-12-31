@@ -1,0 +1,17 @@
+                          PHIẾU NHẬP HÀNG HÓA 
+ ID Phiếu: PH90099                                  Thời gian: 31/12/2021 07:42
+ ID nhân viên: NHU7832                                  SĐT: 09383838383 
+ Họ và tên: Lê Minh Hà                                  Email: ha@gmail.com 
+--Hàng nội địa:
+ID    Tên hàng             Số lượng        Giá       Thành tiền 
+U3    mứt dâu              80              100.00    8000.0
+H7    kẹo mút              9000            1.00      9000.0
+U8    bánh quy             900             2.00      1800.0
+--Hàng nhập khẩu: 
+ID    Tên hàng             Số lượng        Giá       Xuất xứ         Phí VC          Thành tiền 
+H4    thạch dừa            500             5.00      Nga             100.000000     2600.0
+N7    nước ép              300             10.00     Mỹ              300.000000     3300.0
+
+ Tổng tiền hàng: 24700.0
+                                                Chữ ký người làm phiếu
+                                                          Hà
