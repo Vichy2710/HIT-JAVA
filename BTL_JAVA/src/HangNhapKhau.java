@@ -42,9 +42,11 @@ public class HangNhapKhau extends HangNoiDia {
         }while(check);
     }
     public void Xuat(){
-        super.Xuat();
-        System.out.format("%-15s %-15f",xuatXu,phiVanChuyen);
+        System.out.format("| %-5s %-20s %-15d %-9s ",idHang, tenHang, soLuong, fn.Format(gia));
+
+        System.out.format("%-15s %-19s",xuatXu,fn.Format(phiVanChuyen));
     }
+
     public double ThanhTien(){
         return soLuong*gia+phiVanChuyen;
     }

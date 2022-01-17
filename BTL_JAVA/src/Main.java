@@ -58,7 +58,9 @@ public class Main {
         PrintStream toFile= new PrintStream(fl);
         PrintStream console= System.out;
         System.setOut(toFile);
+
         phieu.Xuat();
+
         toFile.close();
         System.setOut(new PrintStream(new FileOutputStream(FileDescriptor.out)));
     }

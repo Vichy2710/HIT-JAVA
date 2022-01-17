@@ -16,9 +16,9 @@ public class NhanVien {
     }
 
     public void Nhap(){
-        String regID="^[A-Z]{3}\\d{4}$";
-        String regSDT="^(?:\\+84|0)\\d{9,15}$";
-        String regEmail="^[a-zA-Z]+[^\\s]*@\\w+\\.\\w+$";
+        String regID="^[A-Z]{3}\\d{4}$"; // VD: ADM1234
+        String regSDT="^(?:\\+84|0)\\d{9,15}$"; // VD: 0987654332, +8450505023028
+        String regEmail="^[a-zA-Z]+[^\\s]*@\\w+\\.\\w+$";  // e@gmail.com, i09@edu.com
         do{
             System.out.print("- ID nhân viên: "); id=input.nextLine();
             if(!id.matches(regID)){
@@ -43,8 +43,8 @@ public class NhanVien {
     }
 
     public void Xuat(){
-        System.out.format(" ID nhân viên: %-40s SĐT: %s \n",id,sdt);
-        System.out.format(" Họ và tên: %-43s Email: %s \n",tenNhanVien,email);
+        System.out.format("| %-15s %-40s %-10s %-33s|\n"," ID nhân viên:",id,"SĐT:",sdt);
+        System.out.format("| %-15s %-40s %-10s %-33s|\n"," Họ và tên:",tenNhanVien,"Email:",email);
     }
 
     public String getId() {

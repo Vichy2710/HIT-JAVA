@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
-public class HangNoiDia implements Comparable<HangNoiDia> {
+public class HangNoiDia extends FormatNumber implements Comparable<HangNoiDia> {
     Scanner input= new Scanner(System.in);
     protected String idHang;
     protected String tenHang;
     protected long soLuong;
     protected double gia;
+    protected FormatNumber fn= new FormatNumber();
 
     public HangNoiDia(){}
     public HangNoiDia(String idHang, String tenHang, long soLuong, double gia) {
@@ -77,7 +78,7 @@ public class HangNoiDia implements Comparable<HangNoiDia> {
 
     }
     public void Xuat(){
-        System.out.format("%-5s %-20s %-15d %-10.2f",idHang, tenHang, soLuong, gia);
+        System.out.format("| %-5s %-20s %-15d %-9s ",idHang, tenHang, soLuong, fn.Format(gia)); // 7,500
     }
     public double ThanhTien(){
         return soLuong*gia;
